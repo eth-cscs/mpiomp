@@ -1,0 +1,4 @@
+mpiomp
+======
+
+MPI/OpenMP tests
