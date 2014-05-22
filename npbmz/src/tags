@@ -1,0 +1,357 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+10	mpi_setup.F	/^   10       format(' Warning: Requested ',i4,' threads per process,',$/;"	l	subroutine:env_setup	file:
+10	mpi_setup.F	/^   10    format(' Requested MPI processes ',i5,$/;"	l	subroutine:mpi_setup	file:
+10	mpi_setup.F	/^   10 format(\/' Sorted zones:'\/$/;"	l	subroutine:map_zones	file:
+10	print_results.F	/^ 10      format(' Mop\/s\/thread    = ', 12x, f12.2)$/;"	l	subroutine:print_results	file:
+10	zone_setup.F	/^   10  continue$/;"	l	subroutine:zone_starts	file:
+1000	bt.F	/^ 1000  format(\/\/, ' NAS Parallel Benchmarks (NPB3.3-MZ-MPI)',$/;"	l	program:BT	file:
+1000	verify.F	/^ 1000      format(' DT does not match the reference value of ', $/;"	l	subroutine:verify	file:
+1001	bt.F	/^ 1001  format(' Number of zones: ', i3, ' x ', i3)$/;"	l	program:BT	file:
+1002	bt.F	/^ 1002  format(' Iterations: ', i3, '    dt: ', F10.6)$/;"	l	program:BT	file:
+1002	verify.F	/^ 1002      format(' NITER does not match the reference value of ', $/;"	l	subroutine:verify	file:
+1003	bt.F	/^ 1003  format(' Number of active processes: ', i5\/)$/;"	l	program:BT	file:
+1004	mpi_setup.F	/^ 1004 format(' Total number of threads: ', i6,$/;"	l	subroutine:env_setup	file:
+11	print_results.F	/^ 11      format(' Operation type  = ', a24)$/;"	l	subroutine:print_results	file:
+12	print_results.F	/^ 12      format(' Verification    = ', 12x, a)$/;"	l	subroutine:print_results	file:
+120	mpi_setup.F	/^  120    zone_proc_id(mz) = ip$/;"	l	subroutine:map_zones	file:
+121	print_results.F	/^ 121     format(\/, ' Compile options:', \/, $/;"	l	subroutine:print_results	file:
+122	print_results.F	/^ 122     format('    FLINK        = ', A)$/;"	l	subroutine:print_results	file:
+123	print_results.F	/^ 123     format('    F_LIB        = ', A)$/;"	l	subroutine:print_results	file:
+124	print_results.F	/^ 124     format('    F_INC        = ', A)$/;"	l	subroutine:print_results	file:
+125	print_results.F	/^ 125     format('    FFLAGS       = ', A)$/;"	l	subroutine:print_results	file:
+126	print_results.F	/^ 126     format('    FLINKFLAGS   = ', A)$/;"	l	subroutine:print_results	file:
+127	print_results.F	/^ 127     format('    RAND         = ', A)$/;"	l	subroutine:print_results	file:
+13	print_results.F	/^ 13      format(' Version         = ', 12x, a12)$/;"	l	subroutine:print_results	file:
+130	mpi_setup.F	/^  130    continue$/;"	l	subroutine:map_zones	file:
+130	print_results.F	/^ 130     format(\/\/' Please send all errors\/feedbacks to:'\/\/$/;"	l	subroutine:print_results	file:
+14	print_results.F	/^ 14      format(' Compile date    = ', 12x, a12)$/;"	l	subroutine:print_results	file:
+15	mpi_setup.F	/^   15 format(i5,':',4(1x,i5),1x,f9.0)$/;"	l	subroutine:map_zones	file:
+15	zone_setup.F	/^   15    continue$/;"	l	subroutine:zone_starts	file:
+1990	verify.F	/^ 1990   format(' Verification being performed for class ', a)$/;"	l	subroutine:verify	file:
+2	print_results.F	/^ 2       format(\/\/, ' ', A, ' Benchmark Completed.')$/;"	l	subroutine:print_results	file:
+20	mpi_setup.F	/^   20       format(' Error: max_threads ',i5,$/;"	l	subroutine:env_setup	file:
+20	mpi_setup.F	/^   20    format('Warning: Requested ',i5,' MPI processes, ',$/;"	l	subroutine:mpi_setup	file:
+20	mpi_setup.F	/^   20 format(\/' Zone-process mapping:'\/$/;"	l	subroutine:map_zones	file:
+20	zone_setup.F	/^   20  continue$/;"	l	subroutine:zone_starts	file:
+200	bt.F	/^ 200        format(' Time step ', i4)$/;"	l	program:BT	file:
+200	mpi_setup.F	/^  200    do while (ipg .le. num_procs)$/;"	l	subroutine:map_zones	file:
+2000	verify.F	/^ 2000   format(' accuracy setting for epsilon = ', E20.13)$/;"	l	subroutine:verify	file:
+2001	verify.F	/^ 2001   format(' Comparison of RMS-norms of residual')$/;"	l	subroutine:verify	file:
+2002	verify.F	/^ 2002   format(' Comparison of RMS-norms of solution error')$/;"	l	subroutine:verify	file:
+2010	verify.F	/^ 2010   format(' FAILURE: ', i2, E20.13, E20.13, E20.13)$/;"	l	subroutine:verify	file:
+2011	verify.F	/^ 2011   format('          ', i2, E20.13, E20.13, E20.13)$/;"	l	subroutine:verify	file:
+2020	verify.F	/^ 2020      format(' Verification Successful')$/;"	l	subroutine:verify	file:
+2021	verify.F	/^ 2021      format(' Verification failed')$/;"	l	subroutine:verify	file:
+210	mpi_setup.F	/^  210    if (ipg .gt. num_procs) goto 300$/;"	l	subroutine:map_zones	file:
+220	mpi_setup.F	/^  220       continue$/;"	l	subroutine:map_zones	file:
+230	mpi_setup.F	/^  230          continue$/;"	l	subroutine:map_zones	file:
+25	mpi_setup.F	/^   25       read(2,'(a)',end=40,err=40) line$/;"	l	subroutine:env_setup	file:
+25	mpi_setup.F	/^   25 format(i5,2x,i5,2x,f10.0,2x,i5,3x,f10.0)$/;"	l	subroutine:map_zones	file:
+25	zone_setup.F	/^   25    qcomm_size(ip+1) = qoffset - 1$/;"	l	subroutine:zone_starts	file:
+3	print_results.F	/^ 3       format(' Class           = ', 12x, a12)$/;"	l	subroutine:print_results	file:
+30	mpi_setup.F	/^   30    format('  proc',i6,'  num_threads =',i5,$/;"	l	subroutine:env_setup	file:
+30	mpi_setup.F	/^   30 format(3x,'zone ',i5,2x,f9.0)$/;"	l	subroutine:map_zones	file:
+30	zone_setup.F	/^   30    continue$/;"	l	subroutine:zone_starts	file:
+300	mpi_setup.F	/^  300 if (npb_verbose .gt. 0 .and. myid .eq. root) then$/;"	l	subroutine:map_zones	file:
+35	mpi_setup.F	/^   35    format(1x,a,': proc=',i5,' nzones=',i5,' size=',f10.0,$/;"	l	subroutine:map_zones	file:
+4	print_results.F	/^ 4          format(' Size            =  ',8x, i5,'x',i5,'x',i3)$/;"	l	subroutine:print_results	file:
+40	mpi_setup.F	/^   40    close(2)$/;"	l	subroutine:env_setup	file:
+40	mpi_setup.F	/^   40 format(\/' Calculated speedup = ',f9.2\/)$/;"	l	subroutine:map_zones	file:
+40	zone_setup.F	/^   40  continue$/;"	l	subroutine:zone_starts	file:
+42	print_results.F	/^ 42            format(' Size            = ',12x, a14)$/;"	l	subroutine:print_results	file:
+44	print_results.F	/^ 44            format(' Size            = ',12x, i12)$/;"	l	subroutine:print_results	file:
+45	zone_setup.F	/^   45    iz = iz\/2$/;"	l	subroutine:zone_starts	file:
+5	print_results.F	/^ 5       format(' Iterations      = ', 12x, i12)$/;"	l	subroutine:print_results	file:
+50	mpi_setup.F	/^   50 format(' myid',i5,' group',i5,' group_size',i5,$/;"	l	subroutine:map_zones	file:
+50	zone_setup.F	/^   50    format(' Error in size: zone',i5,' proc_max_size',i10,$/;"	l	subroutine:zone_starts	file:
+6	print_results.F	/^ 6       format(' Time in seconds = ', 12x, f12.2)$/;"	l	subroutine:print_results	file:
+60	zone_setup.F	/^   60    format(' myid',i5,' iz=',i5,' zone=',i5,$/;"	l	subroutine:zone_starts	file:
+7	print_results.F	/^ 7       format(' Total processes = ', 12x, i12)$/;"	l	subroutine:print_results	file:
+70	zone_setup.F	/^   70    format(' myid',i5,' qcomm_size=',i10)$/;"	l	subroutine:zone_starts	file:
+8	print_results.F	/^ 8       format(' Total threads   = ', 12x, i12)$/;"	l	subroutine:print_results	file:
+80	mpi_setup.F	/^   80 call mpi_bcast(num_threads, 1, mpi_integer, root, $/;"	l	subroutine:env_setup	file:
+80	zone_setup.F	/^   80    format(' myid',i5,' proc',i5,' qcomm_size',2(1x,i10))$/;"	l	subroutine:zone_starts	file:
+800	bt.F	/^ 800   format(' Myid =',i5,'   num_threads =',i4\/$/;"	l	program:BT	file:
+810	bt.F	/^ 810      format(2x,a8,':',f9.3,'  (',f6.2,'%)')$/;"	l	program:BT	file:
+820	bt.F	/^ 820      format('    --> total ',a8,':',f9.3,'  (',f6.2,'%)')$/;"	l	program:BT	file:
+9	print_results.F	/^ 9       format(' Mop\/s total     = ', 12x, f12.2)$/;"	l	subroutine:print_results	file:
+90	mpi_setup.F	/^   90 return$/;"	l	subroutine:decode_line	file:
+900	bt.F	/^ 900   if (.not.timeron) goto 999$/;"	l	program:BT	file:
+910	bt.F	/^ 910   write(*,800) ip, proc_num_threads(ip+1)$/;"	l	program:BT	file:
+98	zone_setup.F	/^ 98    format(\/' Zone sizes:')$/;"	l	subroutine:zone_setup	file:
+99	zone_setup.F	/^ 99    format(i5,':  ',i5,' x',i5,' x',i5)$/;"	l	subroutine:zone_setup	file:
+999	bt.F	/^ 999   continue$/;"	l	program:BT	file:
+BT	bt.F	/^       program BT$/;"	p
+NPROCS	npbparams.h	/^c NPROCS = 4 CLASS = B$/;"	v
+active	mpi_stuff.h	/^      common \/mpi_cmn2\/ myid, root, comm_setup, ierror, active, $/;"	v
+add	add.F	/^      subroutine  add(/;"	s
+adi	adi.F	/^      subroutine  adi(/;"	s
+bb	header.h	/^      integer           aa, bb, cc, BLOCK_SIZE$/;"	v
+binvcrhs	solve_subs.F	/^      subroutine binvcrhs(/;"	s
+binvrhs	solve_subs.F	/^      subroutine binvrhs(/;"	s
+c1	header.h	/^     >                  dnzm1, c1c2, c1c5, c3c4, c1345, conz1, c1, c2, $/;"	v
+c1345	header.h	/^     >                  dnzm1, c1c2, c1c5, c3c4, c1345, conz1, c1, c2, $/;"	v
+c1c2	header.h	/^     >                  dnzm1, c1c2, c1c5, c3c4, c1345, conz1, c1, c2, $/;"	v
+c1c5	header.h	/^     >                  dnzm1, c1c2, c1c5, c3c4, c1345, conz1, c1, c2, $/;"	v
+c2	header.h	/^     >                  dnzm1, c1c2, c1c5, c3c4, c1345, conz1, c1, c2, $/;"	v
+c2dttx1	header.h	/^     >                  dttx2, dtty1, dtty2, dttz1, dttz2, c2dttx1, $/;"	v
+c2dtty1	header.h	/^     >                  c2dtty1, c2dttz1, comz1, comz4, comz5, comz6, $/;"	v
+c2dttz1	header.h	/^     >                  c2dtty1, c2dttz1, comz1, comz4, comz5, comz6, $/;"	v
+c2iv	header.h	/^     >                  c3c4tx3, c3c4ty3, c3c4tz3, c2iv, con43, con16$/;"	v
+c3	header.h	/^     >                  c3, c4, c5, c4dssp, c5dssp, dtdssp, dttx1,$/;"	v
+c3c4	header.h	/^     >                  dnzm1, c1c2, c1c5, c3c4, c1345, conz1, c1, c2, $/;"	v
+c3c4tx3	header.h	/^     >                  c3c4tx3, c3c4ty3, c3c4tz3, c2iv, con43, con16$/;"	v
+c3c4ty3	header.h	/^     >                  c3c4tx3, c3c4ty3, c3c4tz3, c2iv, con43, con16$/;"	v
+c3c4tz3	header.h	/^     >                  c3c4tx3, c3c4ty3, c3c4tz3, c2iv, con43, con16$/;"	v
+c4	header.h	/^     >                  c3, c4, c5, c4dssp, c5dssp, dtdssp, dttx1,$/;"	v
+c4dssp	header.h	/^     >                  c3, c4, c5, c4dssp, c5dssp, dtdssp, dttx1,$/;"	v
+c5	header.h	/^     >                  c3, c4, c5, c4dssp, c5dssp, dtdssp, dttx1,$/;"	v
+c5dssp	header.h	/^     >                  c3, c4, c5, c4dssp, c5dssp, dtdssp, dttx1,$/;"	v
+cc	header.h	/^      integer           aa, bb, cc, BLOCK_SIZE$/;"	v
+ce	header.h	/^     >                  ce, dxmax, dymax, dzmax, xxcon1, xxcon2, $/;"	v
+comm_setup	mpi_stuff.h	/^      common \/mpi_cmn2\/ myid, root, comm_setup, ierror, active, $/;"	v
+comm_setup	mpi_stuff.h	/^      integer   myid, root, comm_setup, ierror, dp_type$/;"	v
+compute_rhs	rhs.F	/^      subroutine compute_rhs(/;"	s
+comz1	header.h	/^     >                  c2dtty1, c2dttz1, comz1, comz4, comz5, comz6, $/;"	v
+comz4	header.h	/^     >                  c2dtty1, c2dttz1, comz1, comz4, comz5, comz6, $/;"	v
+comz5	header.h	/^     >                  c2dtty1, c2dttz1, comz1, comz4, comz5, comz6, $/;"	v
+comz6	header.h	/^     >                  c2dtty1, c2dttz1, comz1, comz4, comz5, comz6, $/;"	v
+con43	header.h	/^     >                  c3c4tx3, c3c4ty3, c3c4tz3, c2iv, con43, con16$/;"	v
+conz1	header.h	/^     >                  dnzm1, c1c2, c1c5, c3c4, c1345, conz1, c1, c2, $/;"	v
+copy_x_face	exch_qbc.F	/^       subroutine copy_x_face(/;"	s
+copy_y_face	exch_qbc.F	/^       subroutine copy_y_face(/;"	s
+cuf	header.h	/^      common \/work_1d\/ cuf, q, ue, buf$/;"	v
+decode_line	mpi_setup.F	/^      subroutine decode_line(/;"	s
+dnxm1	header.h	/^     >                  dz2tz1, dz3tz1, dz4tz1, dz5tz1, dnxm1, dnym1, $/;"	v
+dnym1	header.h	/^     >                  dz2tz1, dz3tz1, dz4tz1, dz5tz1, dnxm1, dnym1, $/;"	v
+dnzm1	header.h	/^     >                  dnzm1, c1c2, c1c5, c3c4, c1345, conz1, c1, c2, $/;"	v
+dp_type	mpi_stuff.h	/^     &          dp_type, num_threads, mz_bload, max_threads$/;"	v
+dssp	header.h	/^     >                  dy5, dz1, dz2, dz3, dz4, dz5, dssp, dt, $/;"	v
+dt	header.h	/^     >                  dy5, dz1, dz2, dz3, dz4, dz5, dssp, dt, $/;"	v
+dt_default	npbparams.h	/^        double precision dt_default, ratio$/;"	v
+dtdssp	header.h	/^     >                  c3, c4, c5, c4dssp, c5dssp, dtdssp, dttx1,$/;"	v
+dttx1	header.h	/^     >                  c3, c4, c5, c4dssp, c5dssp, dtdssp, dttx1,$/;"	v
+dttx2	header.h	/^     >                  dttx2, dtty1, dtty2, dttz1, dttz2, c2dttx1, $/;"	v
+dtty1	header.h	/^     >                  dttx2, dtty1, dtty2, dttz1, dttz2, c2dttx1, $/;"	v
+dtty2	header.h	/^     >                  dttx2, dtty1, dtty2, dttz1, dttz2, c2dttx1, $/;"	v
+dttz1	header.h	/^     >                  dttx2, dtty1, dtty2, dttz1, dttz2, c2dttx1, $/;"	v
+dttz2	header.h	/^     >                  dttx2, dtty1, dtty2, dttz1, dttz2, c2dttx1, $/;"	v
+dx1	header.h	/^     >                  dx1, dx2, dx3, dx4, dx5, dy1, dy2, dy3, dy4, $/;"	v
+dx1tx1	header.h	/^     >                  xxcon3, xxcon4, xxcon5, dx1tx1, dx2tx1, dx3tx1,$/;"	v
+dx2	header.h	/^     >                  dx1, dx2, dx3, dx4, dx5, dy1, dy2, dy3, dy4, $/;"	v
+dx2tx1	header.h	/^     >                  xxcon3, xxcon4, xxcon5, dx1tx1, dx2tx1, dx3tx1,$/;"	v
+dx3	header.h	/^     >                  dx1, dx2, dx3, dx4, dx5, dy1, dy2, dy3, dy4, $/;"	v
+dx3tx1	header.h	/^     >                  xxcon3, xxcon4, xxcon5, dx1tx1, dx2tx1, dx3tx1,$/;"	v
+dx4	header.h	/^     >                  dx1, dx2, dx3, dx4, dx5, dy1, dy2, dy3, dy4, $/;"	v
+dx4tx1	header.h	/^     >                  dx4tx1, dx5tx1, yycon1, yycon2, yycon3, yycon4,$/;"	v
+dx5	header.h	/^     >                  dx1, dx2, dx3, dx4, dx5, dy1, dy2, dy3, dy4, $/;"	v
+dx5tx1	header.h	/^     >                  dx4tx1, dx5tx1, yycon1, yycon2, yycon3, yycon4,$/;"	v
+dxmax	header.h	/^     >                  ce, dxmax, dymax, dzmax, xxcon1, xxcon2, $/;"	v
+dy1	header.h	/^     >                  dx1, dx2, dx3, dx4, dx5, dy1, dy2, dy3, dy4, $/;"	v
+dy1ty1	header.h	/^     >                  yycon5, dy1ty1, dy2ty1, dy3ty1, dy4ty1, dy5ty1,$/;"	v
+dy2	header.h	/^     >                  dx1, dx2, dx3, dx4, dx5, dy1, dy2, dy3, dy4, $/;"	v
+dy2ty1	header.h	/^     >                  yycon5, dy1ty1, dy2ty1, dy3ty1, dy4ty1, dy5ty1,$/;"	v
+dy3	header.h	/^     >                  dx1, dx2, dx3, dx4, dx5, dy1, dy2, dy3, dy4, $/;"	v
+dy3ty1	header.h	/^     >                  yycon5, dy1ty1, dy2ty1, dy3ty1, dy4ty1, dy5ty1,$/;"	v
+dy4	header.h	/^     >                  dx1, dx2, dx3, dx4, dx5, dy1, dy2, dy3, dy4, $/;"	v
+dy4ty1	header.h	/^     >                  yycon5, dy1ty1, dy2ty1, dy3ty1, dy4ty1, dy5ty1,$/;"	v
+dy5	header.h	/^     >                  dy5, dz1, dz2, dz3, dz4, dz5, dssp, dt, $/;"	v
+dy5ty1	header.h	/^     >                  yycon5, dy1ty1, dy2ty1, dy3ty1, dy4ty1, dy5ty1,$/;"	v
+dymax	header.h	/^     >                  ce, dxmax, dymax, dzmax, xxcon1, xxcon2, $/;"	v
+dz1	header.h	/^     >                  dy5, dz1, dz2, dz3, dz4, dz5, dssp, dt, $/;"	v
+dz1tz1	header.h	/^     >                  zzcon1, zzcon2, zzcon3, zzcon4, zzcon5, dz1tz1, $/;"	v
+dz2	header.h	/^     >                  dy5, dz1, dz2, dz3, dz4, dz5, dssp, dt, $/;"	v
+dz2tz1	header.h	/^     >                  dz2tz1, dz3tz1, dz4tz1, dz5tz1, dnxm1, dnym1, $/;"	v
+dz3	header.h	/^     >                  dy5, dz1, dz2, dz3, dz4, dz5, dssp, dt, $/;"	v
+dz3tz1	header.h	/^     >                  dz2tz1, dz3tz1, dz4tz1, dz5tz1, dnxm1, dnym1, $/;"	v
+dz4	header.h	/^     >                  dy5, dz1, dz2, dz3, dz4, dz5, dssp, dt, $/;"	v
+dz4tz1	header.h	/^     >                  dz2tz1, dz3tz1, dz4tz1, dz5tz1, dnxm1, dnym1, $/;"	v
+dz5	header.h	/^     >                  dy5, dz1, dz2, dz3, dz4, dz5, dssp, dt, $/;"	v
+dz5tz1	header.h	/^     >                  dz2tz1, dz3tz1, dz4tz1, dz5tz1, dnxm1, dnym1, $/;"	v
+dzmax	header.h	/^     >                  ce, dxmax, dymax, dzmax, xxcon1, xxcon2, $/;"	v
+elapsed_time	header.h	/^      common \/global\/   elapsed_time, npb_verbose, timeron$/;"	v
+env_setup	mpi_setup.F	/^      subroutine env_setup(/;"	s
+error_norm	error.F	/^      subroutine error_norm(/;"	s
+exact_rhs	exact_rhs.F	/^      subroutine exact_rhs(/;"	s
+exact_solution	exact_solution.F	/^      subroutine exact_solution(/;"	s
+exch_qbc	exch_qbc.F	/^       subroutine exch_qbc(/;"	s
+fields	bt.F	79;"	c	program:BT
+file_id	bt.F	/^       integer*8 :: file_id$/;"	v	program:BT
+fjac	work_lhs.h	/^      common \/work_lhs\/ fjac, njac, lhs, rtmp, tmp1, tmp2, tmp3$/;"	v
+fjac	work_lhs_vec.h	/^      common \/work_lhs\/ fjac, njac, lhs, tmp1, tmp2, tmp3$/;"	v
+forcing	bt.F	/^     >   rhs     (proc_max_size5),$/;"	v	program:BT
+fstatus	bt.F	/^       integer          i, niter, step, fstatus,/;"	v	program:BT
+get_comm_index	mpi_setup.F	/^      subroutine get_comm_index(/;"	s
+gx_size	npbparams.h	/^        integer gx_size, gy_size, gz_size, niter_default$/;"	v
+gy_size	npbparams.h	/^        integer gx_size, gy_size, gz_size, niter_default$/;"	v
+gz_size	npbparams.h	/^        integer gx_size, gy_size, gz_size, niter_default$/;"	v
+i	bt.F	/^       in/;"	v	program:BT
+ierror	mpi_stuff.h	/^      common \/mpi_cmn2\/ myid, root, comm_setup, ierror, active, $/;"	v
+ierror	mpi_stuff.h	/^      integer   myid, root, comm_setup, ierror, dp_type$/;"	v
+initialize	initialize.F	/^      subroutine  initialize(/;"	s
+ip	bt.F	/^     >                  iz, ip,/;"	v	program:BT
+itimer	bt.F	/^     >                  iz, ip, tot_threads, itimer$/;"	v	program:BT
+iz	bt.F	/^       integer          i, niter, step, fstatus, zone, $/;"	v	program:BT
+iz_east	header.h	/^     >               iz_west, iz_east, iz_south, iz_north$/;"	v
+iz_south	header.h	/^     >               iz_west, iz_east, iz_south, iz_north$/;"	v
+iz_west	header.h	/^     >               iz_west, iz_east, iz_south, iz_north$/;"	v
+lhs	work_lhs.h	/^      common \/work_lhs\/ fjac, njac, lhs, rtmp, tmp1, tmp2, tmp3$/;"	v
+lhs	work_lhs_vec.h	/^      common \/work_lhs\/ fjac, njac, lhs, tmp1, tmp2, tmp3$/;"	v
+lhsinit	initialize.F	/^      subroutine lhsinit(/;"	s
+map_zones	mpi_setup.F	/^      subroutine map_zones(/;"	s
+matmul_sub	solve_subs.F	/^      subroutine matmul_sub(/;"	s
+matvec_sub	solve_subs.F	/^      subroutine matvec_sub(/;"	s
+max_reqs	mpi_stuff.h	/^      integer   max_reqs, MSG_SIZE$/;"	v
+max_xysize	npbparams.h	/^        integer max_xysize, max_xybcsize$/;"	v
+mflops	bt.F	/^       double precision navg, mflops,/;"	v	program:BT
+mpi_setup	mpi_setup.F	/^      subroutine mpi_setup$/;"	s
+myid	mpi_stuff.h	/^      common \/mpi_cmn2\/ myid, root, comm_setup, ierror, active, $/;"	v
+myid	mpi_stuff.h	/^      integer   myid, root, comm_setup, ierror, dp_type$/;"	v
+mz_bload	mpi_stuff.h	/^      integer   num_threads, mz_bload, max_threads$/;"	v
+mz_bload	mpi_stuff.h	/^     &          dp_type, num_threads, mz_bload, max_threads$/;"	v
+n3	bt.F	/^       double precision navg, mflops, nsur, n3$/;"	v	program:BT
+navg	bt.F	/^       double precision navg,/;"	v	program:BT
+niter	bt.F	/^       integer          i, niter,/;"	v	program:BT
+njac	work_lhs.h	/^      common \/work_lhs\/ fjac, njac, lhs, rtmp, tmp1, tmp2, tmp3$/;"	v
+njac	work_lhs_vec.h	/^      common \/work_lhs\/ fjac, njac, lhs, tmp1, tmp2, tmp3$/;"	v
+npb_verbose	header.h	/^      common \/global\/   elapsed_time, npb_verbose, timeron$/;"	v
+nsur	bt.F	/^       double precision navg, mflops, nsur,/;"	v	program:BT
+num_threads	mpi_stuff.h	/^      integer   num_threads, mz_bload, max_threads$/;"	v
+num_threads	mpi_stuff.h	/^     &          dp_type, num_threads, mz_bload, max_threads$/;"	v
+num_zones	bt.F	/^       integer num_zones$/;"	v	program:BT
+nx	bt.F	/^       integer   nx(/;"	v	program:BT
+nxmax	bt.F	/^       integer   nx(num_zones), nxmax(/;"	v	program:BT
+ny	bt.F	/^       integer   nx(num_zones), nxmax(num_zones), ny(/;"	v	program:BT
+nz	bt.F	/^       integer   nx(num_zones), nxmax(num_zones), ny(num_zones), $/;"	v	program:BT
+print_results	print_results.F	/^      subroutine print_results(/;"	s
+proc_max_size	npbparams.h	/^        integer proc_max_size, proc_max_size5, proc_max_bcsize$/;"	v
+proc_max_size5	npbparams.h	/^        integer proc_max_size, proc_max_size5, proc_max_bcsize$/;"	v
+proc_num_threads	mpi_stuff.h	/^     &          proc_zone_count, proc_num_threads, proc_num_zones,$/;"	v
+proc_num_zones	mpi_stuff.h	/^     &          proc_num_zones, proc_zone_count(num_procs), $/;"	v
+proc_num_zones	mpi_stuff.h	/^     &          proc_zone_count, proc_num_threads, proc_num_zones,$/;"	v
+proc_zone_count	mpi_stuff.h	/^     &          proc_zone_count, proc_num_threads, proc_num_zones,$/;"	v
+proc_zone_id	mpi_stuff.h	/^      common \/mpi_cmn1\/ proc_zone_size, proc_zone_id, zone_proc_id, $/;"	v
+proc_zone_size	mpi_stuff.h	/^      common \/mpi_cmn1\/ proc_zone_size, proc_zone_id, zone_proc_id, $/;"	v
+q	header.h	/^      common \/work_1d\/ cuf, q, ue, buf$/;"	v
+qbc_in	bt.F	/^     >   qbc_ou  (proc_max_bcsize), $/;"	v	program:BT
+qbc_ou	bt.F	/^     >   forcing (proc_max_size5),$/;"	v	program:BT
+qcomm_size	mpi_stuff.h	/^      common \/mpi_cmn4\/ qcomm_size, qstart2_west, qstart2_east,$/;"	v
+qcomm_size	npbparams.h	/^        integer qcomm_size, qstart2_west, qstart2_east$/;"	v
+qs	bt.F	/^     >   ws      (proc_max_size ),$/;"	v	program:BT
+qstart2_east	mpi_stuff.h	/^      common \/mpi_cmn4\/ qcomm_size, qstart2_west, qstart2_east,$/;"	v
+qstart2_north	mpi_stuff.h	/^     &          qstart2_south, qstart2_north, pcomm_group$/;"	v
+qstart2_south	mpi_stuff.h	/^     &          qstart2_south, qstart2_north, pcomm_group$/;"	v
+qstart2_south	npbparams.h	/^        integer qstart2_south, qstart2_north$/;"	v
+qstart2_west	mpi_stuff.h	/^      common \/mpi_cmn4\/ qcomm_size, qstart2_west, qstart2_east,$/;"	v
+qstart2_west	npbparams.h	/^        integer qcomm_size, qstart2_west, qstart2_east$/;"	v
+qstart_east	header.h	/^      common \/array_start\/ start1, start5, qstart_west, qstart_east,$/;"	v
+qstart_north	header.h	/^     $                     qstart_south, qstart_north, qoffset$/;"	v
+qstart_north	npbparams.h	/^        integer qstart_south, qstart_north, qoffset$/;"	v
+qstart_south	header.h	/^     $                     qstart_south, qstart_north, qoffset$/;"	v
+qstart_south	npbparams.h	/^        integer qstart_south, qstart_north, qoffset$/;"	v
+qstart_west	header.h	/^      common \/array_start\/ start1, start5, qstart_west, qstart_east,$/;"	v
+qstart_west	npbparams.h	/^        integer start1, start5, qstart_west, qstart_east$/;"	v
+requests	mpi_stuff.h	/^      common \/mpi_cmn3\/ requests, statuses$/;"	v
+rho_i	bt.F	/^     >   qs      (proc_max_size ),$/;"	v	program:BT
+rhs	bt.F	/^     >   square  (proc_max_size ),$/;"	v	program:BT
+rhs_norm	error.F	/^      subroutine rhs_norm(/;"	s
+root	mpi_stuff.h	/^      common \/mpi_cmn2\/ myid, root, comm_setup, ierror, active, $/;"	v
+root	mpi_stuff.h	/^      integer   myid, root, comm_setup, ierror, dp_type$/;"	v
+rtmp	work_lhs.h	/^      common \/work_lhs\/ fjac, njac, lhs, rtmp, tmp1, tmp2, tmp3$/;"	v
+set_constants	set_constants.F	/^      subroutine  set_constants$/;"	s
+square	bt.F	/^     >   rho_i   (proc_max_size ),$/;"	v	program:BT
+start1	header.h	/^      common \/array_start\/ start1, start5, qstart_west, qstart_east,$/;"	v
+start1	npbparams.h	/^        integer start1, start5, qstart_west, qstart_east$/;"	v
+start5	header.h	/^      common \/array_start\/ start1, start5, qstart_west, qstart_east,$/;"	v
+start5	npbparams.h	/^        integer start1, start5, qstart_west, qstart_east$/;"	v
+step	bt.F	/^       integer          i, niter, step,/;"	v	program:BT
+t	bt.F	/^       double precision tm/;"	v	program:BT
+t_add	header.h	/^     >        t_rdis1,t_rdis2,t_add,$/;"	v
+t_last	header.h	/^     >        t_rhs,t_last,t_total$/;"	v
+t_names	bt.F	/^       character        t_names(/;"	v	program:BT
+t_rdis1	header.h	/^     >        t_rdis1,t_rdis2,t_add,$/;"	v
+t_rdis2	header.h	/^     >        t_rdis1,t_rdis2,t_add,$/;"	v
+t_rhs	header.h	/^     >        t_rhs,t_last,t_total$/;"	v
+t_rhsy	header.h	/^      integer t_rhsx,t_rhsy,t_rhsz,t_xsolve,t_ysolve,t_zsolve,$/;"	v
+t_rhsz	header.h	/^      integer t_rhsx,t_rhsy,t_rhsz,t_xsolve,t_ysolve,t_zsolve,$/;"	v
+t_xsolve	header.h	/^      integer t_rhsx,t_rhsy,t_rhsz,t_xsolve,t_ysolve,t_zsolve,$/;"	v
+t_ysolve	header.h	/^      integer t_rhsx,t_rhsy,t_rhsz,t_xsolve,t_ysolve,t_zsolve,$/;"	v
+t_zsolve	header.h	/^      integer t_rhsx,t_rhsy,t_rhsz,t_xsolve,t_ysolve,t_zsolve,$/;"	v
+timer_clear	timers.F	/^      subroutine timer_clear(/;"	s
+timer_read	bt.F	/^       double precision tmax, timer_read,/;"	v	program:BT
+timer_read	timers.F	/^      double precision function timer_read(/;"	f
+timer_start	timers.F	/^      subroutine timer_start(/;"	s
+timer_stop	timers.F	/^      subroutine timer_stop(/;"	s
+tmax	bt.F	/^       double precision tmax,/;"	v	program:BT
+tmp1	work_lhs.h	/^      common \/work_lhs\/ fjac, njac, lhs, rtmp, tmp1, tmp2, tmp3$/;"	v
+tmp1	work_lhs_vec.h	/^      common \/work_lhs\/ fjac, njac, lhs, tmp1, tmp2, tmp3$/;"	v
+tmp2	work_lhs.h	/^      common \/work_lhs\/ fjac, njac, lhs, rtmp, tmp1, tmp2, tmp3$/;"	v
+tmp2	work_lhs_vec.h	/^      common \/work_lhs\/ fjac, njac, lhs, tmp1, tmp2, tmp3$/;"	v
+tot_threads	bt.F	/^     >                  iz, ip, tot_threads,/;"	v	program:BT
+trecs	bt.F	/^       double precision tmax, timer_read, t, trecs(/;"	v	program:BT
+tt	timers.F	13;"	c	subroutine:timer_clear
+tt	timers.F	32;"	c	subroutine:timer_start
+tt	timers.F	52;"	c	subroutine:timer_stop
+tt	timers.F	73;"	c	function:timer_read
+tx1	header.h	/^      common \/constants\/ tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3,$/;"	v
+tx1	header.h	/^      double precision  tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3, $/;"	v
+tx2	header.h	/^      common \/constants\/ tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3,$/;"	v
+tx2	header.h	/^      double precision  tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3, $/;"	v
+tx3	header.h	/^      common \/constants\/ tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3,$/;"	v
+tx3	header.h	/^      double precision  tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3, $/;"	v
+ty1	header.h	/^      common \/constants\/ tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3,$/;"	v
+ty1	header.h	/^      double precision  tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3, $/;"	v
+ty2	header.h	/^      common \/constants\/ tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3,$/;"	v
+ty2	header.h	/^      double precision  tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3, $/;"	v
+ty3	header.h	/^      common \/constants\/ tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3,$/;"	v
+ty3	header.h	/^      double precision  tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3, $/;"	v
+tz1	header.h	/^      common \/constants\/ tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3,$/;"	v
+tz1	header.h	/^      double precision  tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3, $/;"	v
+tz2	header.h	/^      common \/constants\/ tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3,$/;"	v
+tz2	header.h	/^      double precision  tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3, $/;"	v
+tz3	header.h	/^      common \/constants\/ tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3,$/;"	v
+tz3	header.h	/^      double precision  tx1, tx2, tx3, ty1, ty2, ty3, tz1, tz2, tz3, $/;"	v
+u	bt.F	/^       doub/;"	v	program:BT
+ue	header.h	/^      common \/work_1d\/ cuf, q, ue, buf$/;"	v
+us	bt.F	/^     >   u       (proc_max_size5),$/;"	v	program:BT
+verified	bt.F	/^       logical          verified$/;"	v	program:BT
+verify	verify.F	/^        subroutine verify(/;"	s
+vs	bt.F	/^     >   us      (proc_max_size ),$/;"	v	program:BT
+ws	bt.F	/^     >   vs      (proc_max_size ),$/;"	v	program:BT
+x_end	header.h	/^      common \/zones\/ x_start, x_end, x_size, y_start, y_end, y_size,$/;"	v
+x_size	header.h	/^      common \/zones\/ x_start, x_end, x_size, y_start, y_end, y_size,$/;"	v
+x_solve	x_solve.F	/^      subroutine x_solve(/;"	s
+x_solve	x_solve_vec.F	/^      subroutine x_solve(/;"	s
+x_start	header.h	/^      common \/zones\/ x_start, x_end, x_size, y_start, y_end, y_size,$/;"	v
+x_zones	npbparams.h	/^        integer x_zones, y_zones$/;"	v
+xxcon1	header.h	/^     >                  ce, dxmax, dymax, dzmax, xxcon1, xxcon2, $/;"	v
+xxcon2	header.h	/^     >                  ce, dxmax, dymax, dzmax, xxcon1, xxcon2, $/;"	v
+xxcon3	header.h	/^     >                  xxcon3, xxcon4, xxcon5, dx1tx1, dx2tx1, dx3tx1,$/;"	v
+xxcon4	header.h	/^     >                  xxcon3, xxcon4, xxcon5, dx1tx1, dx2tx1, dx3tx1,$/;"	v
+xxcon5	header.h	/^     >                  xxcon3, xxcon4, xxcon5, dx1tx1, dx2tx1, dx3tx1,$/;"	v
+y_end	header.h	/^      common \/zones\/ x_start, x_end, x_size, y_start, y_end, y_size,$/;"	v
+y_size	header.h	/^      common \/zones\/ x_start, x_end, x_size, y_start, y_end, y_size,$/;"	v
+y_solve	y_solve.F	/^      subroutine y_solve(/;"	s
+y_solve	y_solve_vec.F	/^      subroutine y_solve(/;"	s
+y_start	header.h	/^      common \/zones\/ x_start, x_end, x_size, y_start, y_end, y_size,$/;"	v
+yycon1	header.h	/^     >                  dx4tx1, dx5tx1, yycon1, yycon2, yycon3, yycon4,$/;"	v
+yycon2	header.h	/^     >                  dx4tx1, dx5tx1, yycon1, yycon2, yycon3, yycon4,$/;"	v
+yycon3	header.h	/^     >                  dx4tx1, dx5tx1, yycon1, yycon2, yycon3, yycon4,$/;"	v
+yycon4	header.h	/^     >                  dx4tx1, dx5tx1, yycon1, yycon2, yycon3, yycon4,$/;"	v
+yycon5	header.h	/^     >                  yycon5, dy1ty1, dy2ty1, dy3ty1, dy4ty1, dy5ty1,$/;"	v
+z_solve	z_solve.F	/^      subroutine z_solve(/;"	s
+z_solve	z_solve_vec.F	/^      subroutine z_solve(/;"	s
+zone	bt.F	/^       integer          i, niter, step, fstatus, zone,/;"	v	program:BT
+zone_proc_id	mpi_stuff.h	/^      common \/mpi_cmn1\/ proc_zone_size, proc_zone_id, zone_proc_id, $/;"	v
+zone_setup	zone_setup.F	/^       subroutine zone_setup(/;"	s
+zone_starts	zone_setup.F	/^       subroutine zone_starts(/;"	s
+zzcon1	header.h	/^     >                  zzcon1, zzcon2, zzcon3, zzcon4, zzcon5, dz1tz1, $/;"	v
+zzcon2	header.h	/^     >                  zzcon1, zzcon2, zzcon3, zzcon4, zzcon5, dz1tz1, $/;"	v
+zzcon3	header.h	/^     >                  zzcon1, zzcon2, zzcon3, zzcon4, zzcon5, dz1tz1, $/;"	v
+zzcon4	header.h	/^     >                  zzcon1, zzcon2, zzcon3, zzcon4, zzcon5, dz1tz1, $/;"	v
+zzcon5	header.h	/^     >                  zzcon1, zzcon2, zzcon3, zzcon4, zzcon5, dz1tz1, $/;"	v
