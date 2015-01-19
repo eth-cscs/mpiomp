@@ -2,7 +2,7 @@ SHELL=/bin/sh
 BENCHMARK=sp-mz
 BENCHMARKU=SP-MZ
 
-include ../config/make.def
+include ../config/makedef
 
 MAIN = sp
 # MAIN = sp_scorep_loop

@@ -3,7 +3,7 @@ BENCHMARK=bt-mz
 BENCHMARKU=BT-MZ
 VEC=
 
-include ../config/make.def
+include ../config/makedef
 
 MAIN = bt_epik
 MAIN = bt_scorep

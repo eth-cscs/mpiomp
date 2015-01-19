@@ -3,7 +3,7 @@ BENCHMARK=lu-mz
 BENCHMARKU=LU-MZ
 VEC=
 
-include ../config/make.def
+include ../config/makedef
 
 MAIN=lu
 # MAIN=lu_scorep_loop
