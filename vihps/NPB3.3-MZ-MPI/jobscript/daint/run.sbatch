@@ -8,7 +8,7 @@
 #SBATCH --cpus-per-task=4       # -d
 
 #SBATCH --time=00:10:00
-#SBATCH --res=course
+###SBATCH --res=course
 
 # benchmark configuration
 export OMP_NUM_THREADS=4
@@ -16,9 +16,8 @@ NPROCS=8
 CLASS=C
 EXE=./bt-mz_$CLASS.$NPROCS
 
-
 set -x
-aprun -n $NPROCS -d $OMP_NUM_THREADS  $EXE
+/usr/bin/time -p aprun -n $NPROCS -d $OMP_NUM_THREADS  $EXE
 
 
 set +x
