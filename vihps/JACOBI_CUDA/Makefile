@@ -10,7 +10,8 @@ CUDA_PATH=${CUDA_ROOT}
 CUDACFLAGS=-I$(CUDA_PATH)/include
 MPICFLAGS=-DUSE_MPI
 
-NVCCFLAGS=-O3 -arch=sm_20 -Xcompiler -march=native
+NVCCFLAGS=-O3 -arch=sm_35 -Xcompiler -march=native
+# NVCCFLAGS=-O3 -arch=sm_20 -Xcompiler -march=native
 
 OMPLDFLAGS=-fopenmp -lm -lstdc++
 CUDALDFLAGS=-L$(CUDA_PATH)/lib64 -lcudart
