@@ -50,7 +50,16 @@ c---------------------------------------------------------------------
 
        include  'header.h'
        include  'mpi_stuff.h'
-      
+#ifdef _PARALLEL_IO
+       include 'H5PartF.h'
+       integer(kind=8) :: file_id
+       character(len=9) :: name_orig
+       integer :: rank=0, positives=0
+       integer(kind=8), parameter :: np_max = 2500
+       real(kind=8) :: np(np_max)=0.0
+       integer(kind=8), parameter :: io_max = 1000000
+       real(kind=8) :: io(io_max)=0.0
+#endif
        integer num_zones
        parameter (num_zones=x_zones*y_zones)
 
@@ -227,8 +236,75 @@ c---------------------------------------------------------------------
      $              u(start5(iz)), 
      $              nx(zone), nxmax(zone), ny(zone), nz(zone))
          end do
+!---------------------------------------------------------------------
+!      write out some data
+!---------------------------------------------------------------------
 
-       end do
+#ifdef _PARALLEL_IO
+! https://bitbucket.org/jgphpc/cscs_io/issue/11/bt-mz-mpi
+        call MPI_COMM_RANK ( MPI_COMM_WORLD ,rank,ierror)
+        !if ( rank .eq. 0 ) then
+
+!                do iz=1,size(u)
+!                        if (u(iz).gt.1e-3) then 
+!                                positives=positives+1
+!                                if (positives .lt. np_max) then 
+!                                np(positives) = u(iz)
+!                                endif
+!                       endif
+!                enddo
+!                !print *,rank,'A',size(io),maxval(io),positives,ierror 
+!                io(1:io_max)=np(1:io_max)
+                 !io(1:io_max)=1.0
+                 io(1:io_max)=u(1:io_max)
+        !        print *,rank,'B',size(io),maxval(io),positives,ierror 
+        !endif ! rk=0
+        !if ( (mod(step,5) .eq. 0) .and. (mod(rank,32) .eq. 0) ) then
+        !if ( (mod(step,5) .eq. 0) .and. (rank .eq. 0) ) then
+        if ( (mod(step,25) .eq. 0) ) then
+
+                ! this enables level 4 ("debug") messages to be
+                ! printed by the H5Part library
+                ! (4_8 is integer*8 with value 4)
+                !ierror = h5pt_set_verbosity_level (4_8) 
+                ierror = h5pt_set_verbosity_level (1_8) 
+                !print *,"262:",ierror,"/",rank
+
+                ! open a file called 'PART_nnnn' in parallel for writing
+                write(unit=name_orig, fmt='(a5,i4.4)') "HDF5_",step
+                file_id = h5pt_openw_par (name_orig, MPI_COMM_WORLD)
+                !file_id = h5pt_openw (name_orig)
+                !file_id = h5pt_openw_par (name_orig, comm_setup)
+                ! in the Fortran API, steps start at 1_kind8
+                !ierror = h5pt_setstep (file_id, stepr8)
+                ierror = h5pt_setstep (file_id, 1_8)
+                !print *,"268:",ierror,"/",rank
+
+                ! write an attribute to the file
+                ierror = h5pt_writefileattrib_string (file_id, 'desc', 
+     >                                                    'simple io')
+                !print *,"272:",ierror,"/",rank
+
+                ! set the size of the data array
+                ierror = h5pt_setnpoints (file_id, io_max)
+                !print *,"275:",ierror,"/",rank
+                !ierror = h5pt_setnpoints (file_id, positives)
+
+                ! write the data (r4 or r8)
+                ierror = h5pt_writedata_r8(file_id, "io", io)
+                !ierror = h5pt_writedata_r8(file_id, "io", 1_8)
+                !ierror = h5pt_writedata_r8(file_id, "io", io)
+                !print *,"280:",ierror,"/",rank
+                !print *,rank,'@',size(io),maxval(io),positives,ierror 
+                !deallocate(io)
+                ! close the file
+                !call MPI_Barrier(MPI_COMM_WORLD,ierror)
+                ierror = h5pt_close (file_id)
+        endif
+
+#endif
+
+       enddo ! step
 
        call timer_stop(1)
        tmax = timer_read(1)
