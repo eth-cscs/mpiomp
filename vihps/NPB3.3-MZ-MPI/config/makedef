@@ -96,4 +96,3 @@ RAND   = randi8
 # The following is highly reliable but may be slow:
 # RAND   = randdp
 
-

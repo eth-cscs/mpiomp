@@ -51,7 +51,7 @@ bt_scorep.o:      bt_scorep.F  mpi_stuff.h header.h npbparams.h
 bt_scorep_loop.o: bt_scorep_loop.F  mpi_stuff.h header.h npbparams.h
 bt_scorep_user.o: bt_scorep_user.F  mpi_stuff.h header.h npbparams.h
 
-bt.o:             bt.f  mpi_stuff.h header.h npbparams.h
+bt.o:             bt.F  mpi_stuff.h header.h npbparams.h
 initialize.o:     initialize.f  header.h npbparams.h
 exact_solution.o: exact_solution.f  header.h npbparams.h
 exact_rhs.o:      exact_rhs.f  header.h npbparams.h
