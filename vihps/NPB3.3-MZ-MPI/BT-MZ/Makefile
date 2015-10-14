@@ -70,5 +70,5 @@ exch_qbc.o:       exch_qbc.f mpi_stuff.h header.h npbparams.h
 mpi_setup.o:      mpi_setup.f  mpi_stuff.h header.h npbparams.h
 
 clean:
-	- rm -f *.o *~ mputil*
+	- rm -f *.o *~ mputil* ../common/*.o
 	- rm -f npbparams.h core
